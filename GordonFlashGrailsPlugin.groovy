@@ -39,12 +39,14 @@ Plugin stops static resource and AJAX requests from clearing out the flash scope
             it.'filter-name'.text() == "charEncodingFilter"
         }
 
+        // TODO: Copy the filter mapping as used by GrailsWebRequestFilter to ensure
+        // dispatchers are the same and url-pattern in case project has customised it.
         filterMapping + {
             'filter-mapping' {
                 'filter-name'('gordonFlashFilter')
                 'url-pattern'('/*')
                 'dispatcher'('FORWARD')
-                'dispatcher'('ERROR')
+                'dispatcher'('REQUEST')
             }
 
         }

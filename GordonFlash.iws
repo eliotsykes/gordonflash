@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af209eaa-32d4-4567-9700-53812cf08787" name="Default" comment="" />
+    <list default="true" id="af209eaa-32d4-4567-9700-53812cf08787" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GordonFlash.ipr" afterPath="$PROJECT_DIR$/GordonFlash.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GordonFlash.iws" afterPath="$PROJECT_DIR$/GordonFlash.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java" afterPath="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java" afterPath="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy" afterPath="$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy" />
+    </list>
     <ignored path="GordonFlash.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -60,11 +67,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GordonFlashGrailsPlugin.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy">
+      <file leaf-file-name="GordonFlashFilter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="45" column="0" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.44542447">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,34 +81,7 @@
       <file leaf-file-name="GordonFlashSpec.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixtureController.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jetbootlabs/gordonflash/FixtureController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="167" selection-end="167" vertical-scroll-proportion="0.101809956">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GordonFlashFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GordonFlashScope.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="37" selection-start="4673" selection-end="4673" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,21 +101,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java" />
-        <option value="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java" />
-        <option value="$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy" />
-        <option value="$PROJECT_DIR$/scripts/_Events.groovy" />
         <option value="$PROJECT_DIR$/temp.web.xml" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/test/functional/GebConfig.groovy" />
         <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/test/functional/pages/HomePage.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/fixture/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/gordonflash/FixtureController.groovy" />
-        <option value="$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/com/jetbootlabs/gordonflash/FixtureController.groovy" />
+        <option value="$PROJECT_DIR$/web-app/test.html" />
+        <option value="$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy" />
+        <option value="$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/web/servlet/DefaultGrailsApplicationAttributes.java" />
+        <option value="$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy" />
+        <option value="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java" />
+        <option value="$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
   </component>
@@ -163,7 +146,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -237,65 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gordonflash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GordonFlash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gordonflash" />
+              <option name="myItemId" value="web-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,6 +301,21 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="Grails:GordonFlash" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="GordonFlash" />
       <setting name="vmparams" value="" />
@@ -423,7 +363,7 @@
     <frame x="0" y="0" width="1920" height="1079" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -433,14 +373,15 @@
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994652" sideWeight="0.67165774" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.67058825" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -495,37 +436,79 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.codehaus.geb/geb-spock/jars/geb-spock-0.6.0.jar!/geb/spock/GebSpec.class">
+    <entry file="file://$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/commons/DefaultGrailsControllerClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="256" selection-end="256" vertical-scroll-proportion="0.08690614">
+        <state line="47" column="13" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.3505843">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.codehaus.geb/geb-spock/jars/geb-spock-0.6.0.jar!/geb/spock/GebReportingSpec.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0894988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacktrace.log">
+    <entry file="file://$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/support/CommandLineResourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
+    <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="46" selection-start="105" selection-end="105" vertical-scroll-proportion="0.050083473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="38" selection-start="4643" selection-end="4664" vertical-scroll-proportion="0.41235393">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/web/util/WebUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="530" column="30" selection-start="23049" selection-end="23049" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/local/grails/current/lib/org.springframework.web-3.0.5.RELEASE.jar!/org/springframework/web/util/WebUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="47" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.5882353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/local/grails/current/lib/org.springframework.web-3.0.5.RELEASE.jar!/org/springframework/web/filter/GenericFilterBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="177" selection-end="177" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/local/grails/current/lib/org.springframework.web-3.0.5.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="91" selection-start="246" selection-end="246" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/compiler/support/GrailsResourceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1035058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/local/grails/current/src/java/org/codehaus/groovy/grails/commons/GrailsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="74" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.5449827">
           <folding />
         </state>
       </provider>
@@ -535,78 +518,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="101" selection-end="101" vertical-scroll-proportion="0.033783782">
+        <state line="2" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.033076074">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
+    <entry file="jar://$USER_HOME$/local/grails/current/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="51" selection-end="51" vertical-scroll-proportion="0.016891891">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/pages/HomePage.groovy">
+    <entry file="jar://$USER_HOME$/local/grails/current/lib/org.springframework.core-3.0.5.RELEASE.jar!/org/springframework/core/io/Resource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="171" selection-end="171" vertical-scroll-proportion="0.1858108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="230" selection-end="230" vertical-scroll-proportion="0.084937714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/fixture/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="117" selection-end="117" vertical-scroll-proportion="0.05232558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="46" selection-start="105" selection-end="105" vertical-scroll-proportion="0.033076074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GordonFlashGrailsPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashScope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="37" selection-start="4673" selection-end="4673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+        <state line="5" column="17" selection-start="169" selection-end="169" vertical-scroll-proportion="0.06802721">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/functional/GordonFlashSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jetbootlabs/gordonflash/FixtureController.groovy">
+    <entry file="file://$PROJECT_DIR$/src/java/com/jetbootlabs/gordonflash/GordonFlashFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="167" selection-end="167" vertical-scroll-proportion="0.101809956">
-          <folding />
+        <state line="45" column="0" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.44542447">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
