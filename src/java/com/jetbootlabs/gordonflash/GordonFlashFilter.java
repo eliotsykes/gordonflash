@@ -1,0 +1,19 @@
+package com.jetbootlabs.gordonflash;
+
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class GordonFlashFilter extends OncePerRequestFilter {
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        System.out.println("Hello from GordonFlashFilter");
+        filterChain.doFilter(request, response);
+        System.out.println("Goodbye from GordonFlashFilter");
+    }
+}
