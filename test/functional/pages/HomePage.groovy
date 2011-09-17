@@ -6,10 +6,10 @@ class HomePage extends Page {
 
     static content = {
 		heading { $("h1") }
-		message { $("span").text() }
+		flashMessage { $("#message").text() }
 	}
 
-    static url = "/GordonFlash"
+    static url = "/"
 
     static at = {
         heading.text() == 'Gordon Flash Grails Plugin Test'
