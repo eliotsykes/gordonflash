@@ -2,7 +2,7 @@ import com.jetbootlabs.gordonflash.GordonFlashFilter
 
 class GordonFlashGrailsPlugin {
     // the plugin version
-    def version = "1.0"
+    def version = "0.1"
     
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
@@ -16,7 +16,7 @@ class GordonFlashGrailsPlugin {
 
     def author = "Eliot Sykes"
     def authorEmail = "eliotsykes gmail"
-    def title = "Gordon Flash - tweaks to Grails Flash Scope"
+    def title = "Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily"
     def description = '''\\
 Gordon Flash Grails plugin protects the flash scope from being cleared out by static file requests, AJAX requests, and non-HTML responses.
 '''
