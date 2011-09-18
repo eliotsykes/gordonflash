@@ -21,6 +21,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Protects Flash Scope from being cleared out by:
+ *   - requests for static resources
+ *   - AJAX requests
+ *   - non-HTML responses
+ */
 public class GordonFlashFilter extends OncePerRequestFilter {
 
     public static final String FLASH_SCOPE = GrailsApplicationAttributes.FLASH_SCOPE;

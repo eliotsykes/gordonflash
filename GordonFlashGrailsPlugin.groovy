@@ -2,13 +2,14 @@ import com.jetbootlabs.gordonflash.GordonFlashFilter
 
 class GordonFlashGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "1.0"
     
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
+    // TODO: Plugin excludes
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
@@ -17,16 +18,12 @@ class GordonFlashGrailsPlugin {
     def authorEmail = "eliotsykes gmail"
     def title = "Gordon Flash - tweaks to Grails Flash Scope"
     def description = '''\\
-Gordon Flash Grails plugin ensures the flash scope is only wiped by full non-static HTML page request/responses.
-Plugin stops static resource and AJAX requests from clearing out the flash scope.
+Gordon Flash Grails plugin protects the flash scope from being cleared out by static file requests, AJAX requests, and non-HTML responses.
 '''
 
-    // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/gordon-flash"
 
     def doWithWebDescriptor = { webXml ->
-        // TODO: Ensure dispatchers are the same as for GrailsWebRequestFilter
-        // TODO: Ensure appears before GrailsWebRequestFilter
         def contextParam = webXml.'context-param'
         contextParam[contextParam.size() - 1] + {
             'filter' {
@@ -39,8 +36,6 @@ Plugin stops static resource and AJAX requests from clearing out the flash scope
             it.'filter-name'.text() == "charEncodingFilter"
         }
 
-        // TODO: Copy the filter mapping as used by GrailsWebRequestFilter to ensure
-        // dispatchers are the same and url-pattern in case project has customised it.
         filterMapping + {
             'filter-mapping' {
                 'filter-name'('gordonFlashFilter')
@@ -53,25 +48,17 @@ Plugin stops static resource and AJAX requests from clearing out the flash scope
     }
 
     def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
     }
 
     def doWithDynamicMethods = { ctx ->
-        // TODO Implement registering dynamic methods to classes (optional)
     }
 
     def doWithApplicationContext = { applicationContext ->
-        // TODO Implement post initialization spring config (optional)
     }
 
     def onChange = { event ->
-        // TODO Implement code that is executed when any artefact that this plugin is
-        // watching is modified and reloaded. The event contains: event.source,
-        // event.application, event.manager, event.ctx, and event.plugin.
     }
 
     def onConfigChange = { event ->
-        // TODO Implement code that is executed when the project configuration changes.
-        // The event is the same as for 'onChange'.
     }
 }
