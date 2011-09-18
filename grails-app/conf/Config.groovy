@@ -22,5 +22,7 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 
-    warn   'org.mortbay.log'
+    warn   'org.mortbay.log',
+           'javascript.StrictErrorReporter',
+           'om.gargoylesoftware.htmlunit'
 }

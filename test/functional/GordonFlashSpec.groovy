@@ -10,6 +10,8 @@ class GordonFlashSpec extends GebReportingSpec {
     static String messageFromVultan = "GORDON'S ALIVE!"
     static String messageFromKala = "Dispatch war rocket Ajax to bring back his body."
     static String messageFromZarkov = "Don't empty my mind! I've spent my whole life filling it!"
+    static String messageFromGordon = "This Ming is a psycho!"
+    static String messageFromBarin = """Tell me more about this man, "Houdini"."""
 
     def "empty message on home page"() {
         given: "no flash message set"
@@ -53,12 +55,12 @@ class GordonFlashSpec extends GebReportingSpec {
         flashMessage == ''
     }
 
-    def "flash scope is not wiped by static html file requests"() {
+    def "flash scope is not wiped by static file requests"() {
         given: "flash message set in 1st request"
         go "fixture", message: messageFromZarkov
 
-        when: "making a request to a static html file"
-        go "test.html"
+        when: "making a request to a static file"
+        go staticFile
 
         and: "making a request for a non-static html response"
         to HomePage
@@ -71,10 +73,53 @@ class GordonFlashSpec extends GebReportingSpec {
 
         then: "the flash message should not be present"
         flashMessage == ''
+
+        where:
+        staticFile << ["test.html", "css/test.css", "images/test.jpg", "pages/index.html", "pages/", "pages"]
     }
 
-    def "flash scope is not wiped by non html content type responses"() {
-        expect:
-        false
+    def "flash scope is not wiped by dynamic non-html responses"() {
+        given: "flash message set in 1st request"
+        go "fixture", message: messageFromGordon
+
+        when: "making a request to a static file"
+        go uri
+
+        and: "making a request for a non-static html response"
+        to HomePage
+
+        then: "the flash message should be present"
+        flashMessage == messageFromGordon
+
+        when: "making a 3rd request"
+        to HomePage
+
+        then: "the flash message should not be present"
+        flashMessage == ''
+
+        where:
+        uri << ["fixture/jsResponse", "fixture/jsonResponse", "fixture/cssResponse", "fixture/xmlResponse"]
+    }
+
+    def "flash scope is not wiped by AJAX requests"() {
+        given: "flash message set in 1st request"
+        go "fixture", message: messageFromBarin
+
+        when: "making AJAX request"
+        $("#ajaxTriggerLink").click()
+        waitFor { $("#ajaxMessage").text() == "AJAX request completed" }
+
+        and: "making a request for a non-static html response"
+        to HomePage
+
+        then: "the flash message should be present"
+        flashMessage == messageFromBarin
+
+        when: "making a 3rd request"
+        to HomePage
+
+        then: "the flash message should not be present"
+        flashMessage == ''
+
     }
 }

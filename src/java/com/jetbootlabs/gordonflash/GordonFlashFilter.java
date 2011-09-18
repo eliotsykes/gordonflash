@@ -1,6 +1,7 @@
 package com.jetbootlabs.gordonflash;
 
 import org.codehaus.groovy.grails.commons.ApplicationHolder;
+import org.codehaus.groovy.grails.web.metaclass.RedirectDynamicMethod;
 import org.codehaus.groovy.grails.web.servlet.FlashScope;
 import org.codehaus.groovy.grails.web.servlet.GrailsApplicationAttributes;
 import org.codehaus.groovy.grails.web.servlet.GrailsFlashScope;
@@ -28,27 +29,37 @@ public class GordonFlashFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         GordonFlashScope fs = getOrCreateFlashScope(request);
         filterChain.doFilter(request, response);
-        rollbackFlashScopeIfNecessary(request, response, fs);
-    }
-
-    private void rollbackFlashScopeIfNecessary(HttpServletRequest request, HttpServletResponse response, GordonFlashScope fs) {
-        if (isRequestForStaticFile(request)) {
-            System.out.println("isRequestForSTatic file true");
+        if (!flashScopeShouldHaveBeenCleared(request, response)) {
             fs.previous();
-        } else {
-            System.out.println("isRequestForSTatic file FALSE");
         }
     }
 
-    private boolean isRequestForStaticFile(HttpServletRequest request) {
-        String servletPath = request.getServletPath();
-        servletPath = servletPath.replaceFirst("/", "");
+    private boolean flashScopeShouldHaveBeenCleared(HttpServletRequest request, HttpServletResponse response) {
+        return isRedirect(request) || (isDynamicHtmlResponse(request, response) && !isAjaxRequest(request));
+    }
 
-        System.out.println("servlet path: " + servletPath);
-        System.out.println("request uri: " + request.getRequestURI());
+    private boolean isRedirect(HttpServletRequest request) {
+        return request.getAttribute(RedirectDynamicMethod.GRAILS_REDIRECT_ISSUED) != null;
+    }
+
+    private boolean isDynamicHtmlResponse(HttpServletRequest request, HttpServletResponse response) {
+        return isHtmlResponse(response) && !isRequestForStaticFile(request);
+    }
+
+    private boolean isHtmlResponse(HttpServletResponse response) {
+        String contentType = response.getContentType();
+        return contentType != null && contentType.startsWith("text/html");
+    }
+
+    private boolean isAjaxRequest(HttpServletRequest request) {
+        return "XMLHttpRequest".equals(request.getHeader("X-Requested-With"));
+    }
+
+    private boolean isRequestForStaticFile(HttpServletRequest request) {
+        String filePath = request.getServletPath().replaceFirst("/", "");
         boolean isRequestForStaticFile = false;
-        if (StringUtils.hasLength(servletPath)) {
-            Resource resource = ApplicationHolder.getApplication().getParentContext().getResource(servletPath);
+        if (StringUtils.hasLength(filePath)) {
+            Resource resource = ApplicationHolder.getApplication().getParentContext().getResource(filePath);
             isRequestForStaticFile = null != resource && resource.exists();
         }
         return isRequestForStaticFile;
