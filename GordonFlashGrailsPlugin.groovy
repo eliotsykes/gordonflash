@@ -2,7 +2,7 @@ import com.jetbootlabs.gordonflash.GordonFlashFilter
 
 class GordonFlashGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "0.2"
     
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
@@ -11,7 +11,19 @@ class GordonFlashGrailsPlugin {
     // resources that are excluded from plugin packaging
     // TODO: Plugin excludes
     def pluginExcludes = [
-            "grails-app/views/error.gsp"
+            "grails-app/**",
+            "scripts/**",
+            "lib/**",
+            "target/**",
+            "test/**",
+            "web-app/**",
+            "README.txt",
+            "*.log",
+            ".gitignore",
+            ".git/**",
+            "*.iml",
+            "*.ipr",
+            "*.iws"
     ]
 
     def author = "Eliot Sykes"
