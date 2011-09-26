@@ -9,7 +9,7 @@ Download the latest packaged plugin from <https://github.com/eliotsykes/gordonfl
 ### DEVELOPER NOTES
 
 ##### Releasing+packaging plugin
-1. Increment version number in GordonFlashGrailsPlugin.groovy
+1. Remove -DEV suffix from version number in GordonFlashGrailsPlugin.groovy
 2. Add release notes to CHANGELOG
 3. Run `grails package-plugin`
 4. Push new plugin zip file to git repo
