@@ -10,8 +10,9 @@ Download the latest packaged plugin from <https://github.com/eliotsykes/gordonfl
 
 ##### Releasing+packaging plugin
 1. Increment version number in GordonFlashGrailsPlugin.groovy
-2. Run `grails package-plugin`
-3. Push new plugin zip file to git repo
+2. Add release notes to CHANGELOG
+3. Run `grails package-plugin`
+4. Push new plugin zip file to git repo
 
 ##### Running tests
 `grails test-app functional:`
@@ -21,3 +22,6 @@ Download the latest packaged plugin from <https://github.com/eliotsykes/gordonfl
 
 ##### Enable debugging
 Edit Config.groovy log4j config
+
+### AUTHOR
+Developed by Eliot Sykes <https://github.com/eliotsykes>, contributions welcome
