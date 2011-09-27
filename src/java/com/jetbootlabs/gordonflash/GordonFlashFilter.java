@@ -27,7 +27,6 @@ import java.io.IOException;
  */
 public class GordonFlashFilter extends OncePerRequestFilter {
 
-    //
     /**
      * For special cases not covered by default protection, you can set a request attribute with this key to true to
      * force flash scope not to be wiped during the request.
