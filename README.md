@@ -14,7 +14,9 @@ Download the latest packaged plugin from <https://github.com/eliotsykes/gordonfl
 3. Run `grails package-plugin`
 4. Push new plugin zip file to git repo
 5. Tag with: `git tag "v0.x" && git push --tags`
-6. Increment version in GordonFlashGrailsPlugin.groovy to 0.x+1-DEV
+6. Release to the grails plugin repo **without source** (source is on github) using: `grails release-plugin -zipOnly`
+7. Increment version in GordonFlashGrailsPlugin.groovy to 0.x+1-DEV
+8. Push to git repo
 
 ##### Running tests
 `grails test-app functional:`

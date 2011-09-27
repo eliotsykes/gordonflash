@@ -28,12 +28,12 @@ class GordonFlashGrailsPlugin {
 
     def author = "Eliot Sykes"
     def authorEmail = "eliotsykes gmail"
-    def title = "Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily"
+    def title = "Gordon Flash Grails plugin"
     def description = '''\\
-Gordon Flash Grails plugin protects the flash scope from being cleared out by static file requests, AJAX requests, and non-HTML responses.
+Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily. See https://github.com/eliotsykes/gordonflash
 '''
 
-    def documentation = "http://grails.org/plugin/gordon-flash"
+    def documentation = "https://github.com/eliotsykes/gordonflash"
 
     def doWithWebDescriptor = { webXml ->
         def contextParam = webXml.'context-param'

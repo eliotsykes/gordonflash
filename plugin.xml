@@ -1,11 +1,11 @@
 <plugin name='gordon-flash' version='0.4' grailsVersion='1.3.7 &gt; *'>
   <author>Eliot Sykes</author>
   <authorEmail>eliotsykes gmail</authorEmail>
-  <title>Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily</title>
+  <title>Gordon Flash Grails plugin</title>
   <description>\
-Gordon Flash Grails plugin protects the flash scope from being cleared out by static file requests, AJAX requests, and non-HTML responses.
+Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily. See https://github.com/eliotsykes/gordonflash
 </description>
-  <documentation>http://grails.org/plugin/gordon-flash</documentation>
+  <documentation>https://github.com/eliotsykes/gordonflash</documentation>
   <resources>
     <resource>BuildConfig</resource>
     <resource>Config</resource>
