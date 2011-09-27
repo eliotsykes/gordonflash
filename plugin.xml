@@ -1,4 +1,4 @@
-<plugin name='gordon-flash' version='0.3' grailsVersion='1.3.7 &gt; *'>
+<plugin name='gordon-flash' version='0.4' grailsVersion='1.3.7 &gt; *'>
   <author>Eliot Sykes</author>
   <authorEmail>eliotsykes gmail</authorEmail>
   <title>Gordon Flash Grails plugin protects flash scope from being cleared out unnecessarily</title>
