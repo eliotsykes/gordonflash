@@ -22,22 +22,13 @@ public class GordonFlashScope implements FlashScope, Serializable {
     private Map next = new ConcurrentHashMap();
     public static final String ERRORS_PREFIX = "org.codehaus.groovy.grails.ERRORS_";
     private static final String ERRORS_PROPERTY = "errors";
-    private Map savedCurrent = new ConcurrentHashMap();
-    private Map savedNext = new ConcurrentHashMap();
-
-    private void saveState() {
-        savedCurrent = new ConcurrentHashMap(current);
-        savedNext = new ConcurrentHashMap(next);
-    }
-
-    public void previous() {
-        current = new ConcurrentHashMap(savedCurrent);
-        next = new ConcurrentHashMap(savedNext);
-        reassociateObjectsWithErrors(current);
-    }
 
     public void next() {
-        saveState();
+        // Does nothing, instead nextThatWorks() does the work to allow us to delay clearing flash scope until
+        // the end of processing a request
+    }
+
+    public void nextThatWorks() {
         current.clear();
         current = new ConcurrentHashMap(next);
         next.clear();

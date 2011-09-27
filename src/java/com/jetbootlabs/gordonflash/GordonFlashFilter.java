@@ -44,8 +44,8 @@ public class GordonFlashFilter extends OncePerRequestFilter {
         if (log.isDebugEnabled()) {
             log.debug("Request servlet path: " + request.getServletPath());
         }
-        if (!flashScopeShouldHaveBeenCleared(request, wrappedResponse)) {
-            fs.previous();
+        if (flashScopeShouldHaveBeenCleared(request, wrappedResponse)) {
+            fs.nextThatWorks();
         }
     }
 
