@@ -1,4 +1,4 @@
-# 0.4-dev
+# 0.4-DEV
 * Simplified design, no longer have to save previous flash state and rollback. We only wipe flash scope when needed at *end* of the request.
 
 # 0.3
