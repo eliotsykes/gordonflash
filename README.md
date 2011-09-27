@@ -15,7 +15,7 @@ To install the latest version in your app: `grails install-plugin gordon-flash`
 3. Run `grails package-plugin`
 4. Push new plugin zip file to git repo
 5. Tag with: `git tag "v0.x" && git push --tags`
-6. Release to the grails plugin repo **without source** (source is on github) using: `grails release-plugin -zipOnly`
+6. Release to the grails plugin repo **without source** (source is on github) using: `grails release-plugin -zipOnly` . This will ask for your svn credentials (same as your xircles account).
 7. Increment version in GordonFlashGrailsPlugin.groovy to 0.x+1-DEV
 8. Push to git repo
 
@@ -27,6 +27,9 @@ To install the latest version in your app: `grails install-plugin gordon-flash`
 
 ##### Enable debugging
 Edit Config.groovy log4j config
+
+##### Grails repo svn access
+svn --username xircles-user --password xircles-pwd checkout https://svn.codehaus.org/grails-plugins/grails-gordon-flash
 
 ### AUTHOR
 Developed by Eliot Sykes <https://github.com/eliotsykes>, contributions welcome
