@@ -2,9 +2,10 @@
 
 Gordon Flash Grails plugin protects the flash scope from being cleared out by static file requests, AJAX requests, non-HTML responses, error responses, and explicitly protected requests.
 
-At time of writing this plugin is only available from the GitHub repo <https://github.com/eliotsykes/gordonflash>
+The default config will be good enough to protect the flash scope in most cases. In special cases, you can explicitly protect the flash scope during a request by calling `request.setAttribute(GordonFlashFilter.PROTECT_FLASH_SCOPE, true)`
 
-Download the latest packaged plugin from <https://github.com/eliotsykes/gordonflash/grails-gordon-flash-VERSION.zip>
+To install the latest version in your app: `grails install-plugin gordon-flash`
+
 
 ### DEVELOPER NOTES
 
