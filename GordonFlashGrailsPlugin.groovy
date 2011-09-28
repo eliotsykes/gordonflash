@@ -2,7 +2,7 @@ import com.jetbootlabs.gordonflash.GordonFlashFilter
 
 class GordonFlashGrailsPlugin {
     // the plugin version
-    def version = "0.5-DEV"
+    def version = "0.5"
     
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
