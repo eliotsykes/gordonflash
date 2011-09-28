@@ -2,7 +2,7 @@ import com.jetbootlabs.gordonflash.GordonFlashFilter
 
 class GordonFlashGrailsPlugin {
     // the plugin version
-    def version = "0.5"
+    def version = "0.6-DEV"
     
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
@@ -43,7 +43,7 @@ Gordon Flash Grails plugin protects flash scope from being cleared out unnecessa
                 'filter-class'(GordonFlashFilter.name)
             }
         }
-
+git 
         def filterMapping = webXml.'filter-mapping'.find {
             it.'filter-name'.text() == "charEncodingFilter"
         }
